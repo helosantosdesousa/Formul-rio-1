@@ -1,0 +1,106 @@
+:root{
+    --rosa: rgb(204, 97, 172);
+    --fundo2: rgb(134, 17, 111);
+    --botao1: rgb(218, 128, 200);
+    --botao2: rgb(154, 10, 125);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(214, 118, 195), var(--fundo2)); 
+    top: 40%;
+    left: 50%;   
+    
+}
+
+.box{
+    position: absolute;
+    color: white;
+    border-radius: 7px;
+    width: 60%;
+    margin: 5px 20%;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.15);
+    
+    
+}
+fieldset{
+    border: 3px solid var(--rosa);
+    border-radius: 7px;
+
+}
+
+legend{
+    border: 5px solid var(--rosa);
+    border-radius: 9.5px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--rosa);    
+}
+
+.imputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px ;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelImput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelImput{
+    top:-20px;
+    
+}
+.botao{
+   display: flex;
+   justify-content: center;
+   margin-top: 1em;
+}
+.submit{
+    background-image: linear-gradient(to right, var(--botao1), var(--botao2));
+    width: 90%;
+    height: 50px;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-style: none;
+    text-align: center;
+    
+}
+.submit:hover{
+    background-image: linear-gradient(to right,rgb(220, 149, 199), rgb(216, 7, 178));
+}
+.data_nasc{
+    border-radius: 5px;
+    height: 2em;
+    border-style: none;
+    padding: 4px;
+}
+/*.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
